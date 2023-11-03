@@ -1,0 +1,16 @@
+<!-- src/app/app.component.html -->
+
+<!-- Mouse Click Event -->
+<button (click)="handleClick()">Click me</button>
+
+<!-- Mouse Over Event -->
+<div (mouseover)="handleMouseOver()">Hover over me</div>
+
+<!-- Mouse Move Event -->
+<div (mousemove)="handleMouseMove($event)">Move the mouse here</div>
+
+<!-- Mouse Down and Up -->
+<div (mousedown)="handleMouseDown()" (mouseup)="handleMouseUp()">Click and hold</div>
+
+<!-- Mouse Enter and Leave Event -->
+<div (mouseenter)="handleMouseEnter()" (mouseleave)="handleMouseLeave()">Mouse over here</div>
