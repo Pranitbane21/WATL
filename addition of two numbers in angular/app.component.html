@@ -1,0 +1,7 @@
+<!-- src/app/app.component.html -->
+
+<form #additionForm ="ngForm">
+  <input type="text" name="fnum" ngModel><br>
+  <input type="text" name="snum" ngModel><br>
+  <button (click)="addNumber(additionForm.value)">Add two Numbers</button>
+</form>
