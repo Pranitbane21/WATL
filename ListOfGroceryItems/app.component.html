@@ -1,0 +1,11 @@
+<!-- src/app/app.component.html -->
+
+<h1>List Of Grocery Item</h1>
+<form #groceyForm ="ngForm">
+  <input type="text" name="grocery" ngModel><br>
+  <button (click)="addGrocery(groceyForm.value)">Add Grocery</button>
+</form>
+
+<ul>
+  <li *ngFor="let item of arr">{{item}}</li>
+</ul>
